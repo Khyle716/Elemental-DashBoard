@@ -1,0 +1,81 @@
+header {
+  position: absolute;
+  top: 0%;
+  height: 13%;
+  width: 100%;
+  background: orangered;
+  z-index: 1;
+}
+
+.HTitle {
+  position: absolute;
+  margin: 20px 5%;
+  height: 40%;
+  width: 20%;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+}
+
+#Wallet {
+  position: absolute;
+  margin: 20px 77%;
+  height: 40%;
+  width: 20%;
+  color: lawngreen;
+  font-family: 'Roboto', sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.HButtoncontainer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 35%;
+  height: 40%;
+  width: 40%;
+}
+
+.HButtoncontainer ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.HButtoncontainer ul li a {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.HButtoncontainer ul li a:hover {
+  color: white;
+}
+
+.HButtoncontainer ul li::after {
+  content: '';
+  height: 2.5px;
+  width: 0;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.5s;
+  cursor: pointer;
+  z-index: -2;
+}
+
+.HButtoncontainer ul li:hover::after {
+  width: 100%;
+}

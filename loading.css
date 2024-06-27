@@ -1,0 +1,20 @@
+.loading {
+  position: absolute;
+  display: none;
+  top: 93%;
+  left: 96.75%;
+  height: 30px;
+  width: 30px;
+  border-top: 3px solid white;
+  border-radius: 90%;
+  animation: spinLoading 1s ease infinite;
+}
+
+@keyframes spinLoading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

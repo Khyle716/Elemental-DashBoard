@@ -1,0 +1,113 @@
+<html>
+  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Flame/Flame-CSS/header.css">
+    <link rel="stylesheet" href="/Flame/Flame-CSS/body.css">
+    <link rel="stylesheet" href="/Flame/Flame-CSS/container.css">
+    <link rel="stylesheet" href="/Flame/Flame-CSS/trade.css">
+    <link rel="stylesheet" href="/Flame/Flame-CSS/loading.css">
+    <link rel="stylesheet" href="/Flame/Flame-CSS/game.css">
+    <link rel="stylesheet" href="/Flame/Flame-CSS/profile.css">
+  </body>
+  <body>
+    <header>
+      <div class="HTitle">Elemental DashBoard</div>
+      <div class="HButtoncontainer">
+        <ul>
+          <li><a class="HBtn" id="TradeHBtn">Trade</a></li>
+          <li><a class="HBtn" id="CurrencyHBtn">Currency</a></li>
+          <li><a class="HBtn" id="GamesHBtn">Games</a></li>
+          <li><a class="HBtn" id="ProfileHBtn">Profile</a></li>
+        </ul>
+      </div>
+      <div id="Wallet" name="Wallet">E$0</div>
+    </header>
+    <div class="container">
+      <div class="CTitle">FLAME</div>
+      <span id="CPrice">E$1 -> FLM$0.000,000,090,440</span>
+      <div class="CBorder1"></div>
+      <div class="CParagraph">
+        <div class="PTitle">
+          <h2>What is FLAME?</h2>
+        </div>
+        <div class="PNav">
+          <p>FLAME is an In-game Currency that is traded between other supported games.</p>
+        </div>
+        <div class="PMain">
+          <p>They can be traded from In-Game Currency to an In-Game Crypto Currency.</p>
+        </div>
+        <div class="CurrencyType">
+          <div class="Indicator">
+            <div class="circle" id="firstC"></div>
+            <div class="circle" id="secondC"></div>
+            <div class="circle" id="thirdC"></div>
+          </div>
+          <input type="button" class="ctbtn" id="backBtn" value="<">
+          <input type="button" class="ctbtn" id="forwardBtn" value=">">
+        </div>
+        <div class="PSection">
+          <div class="Stocks">
+            <ul>
+              <label id="FlameStock">FLAME</label>
+              <li><p>E$1 -> FLM$0.000,000,090,440</p></li>
+              <label id="WaterStock">WATER</label>
+              <li><p>E$1 -> WTR$0.000,000,090,440</p></li>
+              <label id="LightStock">LIGHT</label>
+              <li><p>E$1 -> LIT$0.000,000,090,440</p></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="trade-container" id="trade-container">
+      <div class="trade-body" id="trade-body">
+        <div class="trade-body-container" id="trade-body-container">
+          <button id="exitTrade" onclick="exitTrade">-</button>
+          <label class="trade-label" id="TLU2U">Trade User To User</label>
+          <input type="button" class="trade-pick" id="tradeU2U">
+          <label class="trade-label" id="TLEC">Exchange Currency</label>
+          <input type="button" class="trade-pick" id="EC">
+        </div>
+      </div>
+    </div>
+    <div class="game-container" id="game-container">
+      <div class="game-body" id="game-body">
+        <div class="game-body-container" id="game-body-container">
+          <label id="labelTitleGame">Select A Game</label>
+          <input type="button" id="exitGame" value="-">
+          <input type="button" class="game-pick" value="">
+          <input type="button" class="game-pick" value="">
+          <input type="button" class="game-pick" value="?">
+          <input type="button" class="game-pick" value="?">
+        </div>
+      </div>
+    </div>
+    <div class="profile-container" id="profile-container">
+      <div class="profile-body" id="profile-body">
+        <div class="profile-body-container" id="profile-body-container">
+          <label id="labelTitleProfile">Profile / Index</label>
+          <input type="button" id="exitProfile" value="-">
+          <div class="profileIndex">
+            <ul>
+              <li>Name: </li>
+              <li>Username: </li>
+              <li>Email: </li>
+              <li>Ecryption Token: </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loading" id="loading"></div>
+  </body>
+  <body>
+    <script src="/Flame/Flame-JavaScripts/trade.js"></script>
+    <script src="/Flame/Flame-JavaScripts/currency-type.js"></script>
+    <script src="/Flame/Flame-JavaScripts/game.js"></script>
+    <script src="/Flame/Flame-JavaScripts/profile.js"></script>
+    <script src="/Flame/Flame-JavaScripts/wallet.js"></script>
+  </body>
+</html>

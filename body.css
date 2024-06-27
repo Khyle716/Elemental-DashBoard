@@ -1,0 +1,6 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0 0;
+  background-image: linear-gradient(to right, lightsalmon, orange);
+}
